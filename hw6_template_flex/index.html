@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HW6-template-flex</title>
+        <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+    <body>
+        <div class="wrapper">
+    
+            <div class="flex">
+
+        <header>
+
+            <div class="flex-item-1"> 
+                 
+                    <a href="https://www.w3schools.com/tags/default.asp"> login</a>
+                    <a href="\">site</a>
+                    <a href="tel:+380994774563">tel</a>
+                
+            </div>
+       
+                
+               
+            
+
+
+            <div class="flex-item-2"> 
+                
+                    <img src="img/dog_logo.jpg">
+                    <form action="/action_page.php">
+                        <label for="gsearch"></label>
+                        <input type="search" id="gsearch" name="gsearch">
+                        <input type="submit" value="Search" class="button-search">
+                      </form>
+               
+            </div>
+
+
+
+
+
+            <div>
+                
+                    <ul class=flex-item-3>
+                        <li> <a href="#">ГЛАВНАЯ</a></li>
+                        <li> <a href="#">КАТАЛОГ</a></li>
+                        <li> <a href="#">КОНТАКТЫ</a></li>
+                        <li> <a href="#">О НАС</a></li>
+                        <li> <a href="#">БЛОГ</a></li>
+                    </ul>
+                
+            </div>
+        </header>
+
+        <main class="flex-item-4">
+            
+
+
+            <aside class="aside-aside-left">
+
+                <h3>CATEGORIES</h3>
+                <div>
+                    <ul>
+                        <li class="categories">SHOES</li>
+                        <li class="categories">BAGS</li>
+                        <li class="categories">SKIRTS</li>
+                        <li class="categories">COATS</li>
+                        <li class="categories">SWEATSHIRTS</li>
+                        <li class="categories">SLIPPERS</li>
+                        <li class="categories">GLASSES</li>
+                    </ul>
+                </div>
+                <h3>BEST SELLERS</h3>
+
+                <div>
+                    <div>
+                        <img src="img/dog_1.jpeg" class="best-sellers">
+                    </div>
+                    <div>
+                        <img src="img/dog_2.jpg" class="best-sellers">
+                    </div>
+                    <div>
+                        <img src="img/dog_3.jpeg" class="best-sellers">
+                    </div>
+                </div>
+
+            </aside>
+
+            <script>
+                function changeColor(color) {
+                  var pic;
+                  switch (color) {
+                      case 'red':
+                        pic = "img/dog_1.jpeg"
+                        break
+                      case 'blue':
+                        pic = "img/dog_2.jpg"
+                        break
+                      case 'yellow':
+                        pic = "img/dog_3.jpeg"
+                        break
+                      default: break
+                  }
+
+                //   if (color == "red") {
+                //     pic = "img/dog_1.jpeg"
+                //   } else if (color == "blue") {
+                //     pic = "img/dog_2.jpg"
+                //   } else if (color == "yellow") {
+                //     pic = "img/dog_3.jpeg"
+                //   }
+              
+                  document.getElementById('dog').src = pic;
+                }
+                </script>
+        
+            <aside class="aside-aside-right">
+
+                <div class="block-slider"> 
+                    <div class="picture-slider"> 
+                        <img src="img/dog_1.jpeg" id="dog">
+                    </div>
+                    <div class="block-slider-rigth">
+                        <h3>Magrllan Hydra Black 26" (2014)</h3>
+                        <h4>Price: 500$</h4>
+                        <div>
+                            <label class="container">One
+                                <input type="radio" name="color" value="red" onclick=changeColor(value)>
+                              </label>
+                              <label class="container">Two
+                                <input type="radio" name="color" value="blue" onclick=changeColor(value)>
+                              </label>
+                              <label class="container">Three
+                                <input type="radio" name="color" value="yellow" onclick=changeColor(value)>
+                              </label>
+                        </div>
+                        <div><button class="button-search">ADD TO CHART</button></div>
+                    </div>
+            
+                </div>
+
+                <div> 
+                    <h4>Specification</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium maiores molestiae ullam nesciunt, voluptate quae dignissimos temporibus omnis sit. Itaque blanditiis, consequuntur nihil eligendi explicabo doloribus rerum veritatis atque minus.</p>
+                </div>
+                <div> 
+                    <h4>Configuration</h4>
+                    <table>
+                            <tr>
+                              <th>Frame</th>
+                              <td>Cyclus Tools Standard Thread Cutters for Bottom Bracket Housing with Holder</td>
+                            </tr>
+                            <tr>
+                              <th>Headset</th>
+                              <td>3min19sec Headset Spacer, Carbon</td>
+                            </tr>
+                            <tr>
+                                <th>Fork</th>
+                                <td>RockShox Lyrik Ultimate RC2 DebonAir Boost 29" Suspension Fork - 2021 Model</td>
+                            </tr>
+                            <tr>
+                                <th>Tyres</th>
+                                <td>Michelin A1 Airstop Road inner tube for 28" tyres</td>
+                            </tr>
+                            <tr>
+                                <th>Brakes</th>
+                                <td>TRP Hylex RS Disc Brakes - 2017 Model</td>
+                            </tr>
+                            <tr>
+                                <th>Stem</th>
+                                <td>Renthal Apex 35 Stem</td>
+                            </tr>
+                              
+                    </table>
+                    
+                </div>
+                <div class="aside-right-pic"> 
+                    <div class="aside-right-pic">
+                        <img src="img/dog_1.jpeg">
+                    </div>
+                    <div class="aside-right-pic">
+                        <img src="img/dog_2.jpg">
+                    </div>
+                    <div class="aside-right-pic">
+                        <img src="img/dog_3.jpeg">
+                    </div>
+                </div>
+            </aside>
+        </main>
+
+        
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class=" col col-25">
+                         <div class="col-inner">
+                        <h3> Категории</h3>
+                        <ul>
+                            <li> <a href="http://htmlbook.ru/css/visited">Главная</a></li>
+                            <li> <a href="#">Каталог</a></li>
+                            <li> <a href="#">Блог</a></li>
+                            <li> <a href="#">Контакты</a></li>
+                            <li> <a href="#">О нас</a></li>
+                        </ul>
+                        </div>
+                    </div>
+                    <div class=" col col-25">
+                        <div class="col-inner">
+                        <h3> Контакты</h3>
+                        <ul>
+                            <li>
+                                <address>Украина г. Харьков ул. Сумская</address>
+                            </li>
+                            <li>
+                                <a href="tel:+380994774563">0994774563</a>
+                            </li>
+                            <li>
+                                <a href="mailto:test@gmail.com">test@test.com</a>
+                            </li>
+
+                        </ul>
+                        </div>
+                    </div>
+                    <div class="col col-50">
+                        <div class="col-inner">
+                        <h3> Соцсети</h3>
+                        <ul class="socials-row">
+                            <li class="col"> <a href="#" class="facebook"> <img src="./img/facebook.png" alt="tg"></a></li>
+                            <li class="col"> <a href="#" class="twitter"> <img src="./img/twitter.png" alt="tw"></a></li>
+                            <li class="col"> <a href="#" class="youtube"> <img src="./img/youtube.png" alt="youtube"></a></li>
+                            <li class="col"> <a href="#" class="instagram"> <img src="./img/instagram.png" alt="inst"></a></li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+</footer>
+<div class="flex-item-1"> 
+            
+    <p>Copyright @ 2015</p> 
+
+</div>
+    
+    </div>
+    </div>
+    </body>
+    
+</html>
