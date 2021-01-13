@@ -2,6 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>HW6-template-flex</title>
         <link rel="stylesheet" href="css/style.css">
 
@@ -29,7 +30,7 @@
 
             <div class="flex-item-2"> 
                 
-                    <img src="img/dog_logo.jpg">
+                    <a href="\"><img src="img/dog_logo.jpg"></a>
                     <form action="/action_page.php">
                         <label for="gsearch"></label>
                         <input type="search" id="gsearch" name="gsearch">
@@ -43,6 +44,9 @@
 
 
             <div>
+                <span class="mobile-btn"> 
+
+                </span>
                 
                     <ul class=flex-item-3>
                         <li> <a href="#">ГЛАВНАЯ</a></li>
@@ -64,26 +68,26 @@
                 <h3>CATEGORIES</h3>
                 <div>
                     <ul>
-                        <li class="categories">SHOES</li>
-                        <li class="categories">BAGS</li>
-                        <li class="categories">SKIRTS</li>
-                        <li class="categories">COATS</li>
-                        <li class="categories">SWEATSHIRTS</li>
-                        <li class="categories">SLIPPERS</li>
-                        <li class="categories">GLASSES</li>
+                        <a href="\"> <li class="categories" id="shoes">SHOES</li> </a>
+                        <a href="\"> <li class="categories">BAGS</li> </a>
+                        <a href="\"> <li class="categories">SKIRTS</li> </a>
+                        <a href="\"> <li class="categories" id="coats">COATS</li> </a>
+                        <a href="\"> <li class="categories">SWEATSHIRTS</li> </a>
+                        <a href="\"> <li class="categories">SLIPPERS</li> </a>
+                        <a href="\"> <li class="categories" id="glasses">GLASSES</li> </a>
                     </ul>
                 </div>
                 <h3>BEST SELLERS</h3>
 
                 <div>
                     <div>
-                        <img src="img/dog_1.jpeg" class="best-sellers">
+                       <a href="#shoes"> <img src="img/dog_1.jpeg" class="best-sellers"> </a>
                     </div>
                     <div>
-                        <img src="img/dog_2.jpg" class="best-sellers">
+                       <a href="#coats"> <img src="img/dog_2.jpg" class="best-sellers"> </a>
                     </div>
                     <div>
-                        <img src="img/dog_3.jpeg" class="best-sellers">
+                       <a href="#glasses"> <img src="img/dog_3.jpeg" class="best-sellers"> </a>
                     </div>
                 </div>
 
@@ -93,13 +97,13 @@
                 function changeColor(color) {
                   var pic;
                   switch (color) {
-                      case 'red':
+                      case 'mops':
                         pic = "img/dog_1.jpeg"
                         break
-                      case 'blue':
+                      case 'scottish':
                         pic = "img/dog_2.jpg"
                         break
-                      case 'yellow':
+                      case 'rottweiler':
                         pic = "img/dog_3.jpeg"
                         break
                       default: break
@@ -127,14 +131,14 @@
                         <h3>Magrllan Hydra Black 26" (2014)</h3>
                         <h4>Price: 500$</h4>
                         <div>
-                            <label class="container">One
-                                <input type="radio" name="color" value="red" onclick=changeColor(value)>
+                            <label class="container">Mops
+                                <input type="radio" name="color" value="mops" onclick=changeColor(value)>
                               </label>
-                              <label class="container">Two
-                                <input type="radio" name="color" value="blue" onclick=changeColor(value)>
+                              <label class="container">Scottish terrier
+                                <input type="radio" name="color" value="scottish" onclick=changeColor(value)>
                               </label>
-                              <label class="container">Three
-                                <input type="radio" name="color" value="yellow" onclick=changeColor(value)>
+                              <label class="container">Rottweiler
+                                <input type="radio" name="color" value="rottweiler" onclick=changeColor(value)>
                               </label>
                         </div>
                         <div><button class="button-search">ADD TO CHART</button></div>
@@ -239,11 +243,13 @@
             </div>
 
 </footer>
+
 <div class="flex-item-1"> 
             
     <p>Copyright @ 2015</p> 
 
 </div>
+
     
     </div>
     </div>
